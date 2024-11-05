@@ -1,13 +1,8 @@
 import datetime
 from fastapi import HTTPException
-
 from pydantic import BaseModel, EmailStr, validator, constr
-
-
 from typing import Optional, List
-
 from pydantic import BaseModel
-
 from app.crud.crud_user import user_crud
 
 
@@ -70,8 +65,8 @@ class CreateUserInDb(BaseModel):
     hashed_password: str
 
 
-
-
+class TokenData(BaseModel):
+    email: str
 
 
 class UpdatePassword(BaseModel):
