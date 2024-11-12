@@ -7,5 +7,5 @@ class Dish(Base):
     name = Column(String, nullable=False)
     description = Column(String, nullable=True)
     price = Column(Float, nullable=False)
+    image = Column(String)
     restaurant_id = Column(Integer, ForeignKey('restaurant.id'))
-

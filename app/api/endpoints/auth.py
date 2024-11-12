@@ -29,7 +29,6 @@ async def refresh(refresh_token: str):
     return tokens
 
 
-
 # Вход пользователя
 @router.post("/token/")
 async def login_for_access_token(
